@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:theme="@style/ThemeOverlay.Vellog_login.FullscreenContainer">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="3"
+                android:text="회원 가입"
+                android:textColor="@color/darkgreen"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:fontFamily="@font/font555"
+                android:gravity="center"/>
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/sign_mailtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="이메일"
+                    android:textColor="@color/darkgreen"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/font555"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/sign_mail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/box_sign_up"
+                        android:ems="10"
+                        android:hint="이메일"
+                        android:inputType="textPersonName"
+                        android:textStyle="normal"
+                        android:text="" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/box_sign_up"
+                        android:text="전송"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/sign_accesstext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="인증번호 확인"
+                    android:textColor="@color/darkgreen"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/font555"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/sign_access"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/box_sign_up"
+                        android:ems="10"
+                        android:hint="인증번호"
+                        android:inputType="textPersonName"
+                        android:textStyle="normal"
+                        android:text="" />
+
+                    <Button
+                        android:text="확인"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/box_sign_up"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/sign_idtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="아이디"
+                    android:textColor="@color/darkgreen"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/font555"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/sign_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/box_sign_up"
+                    android:ems="10"
+                    android:hint=" 아이디"
+                    android:inputType="textPersonName"
+                    android:textStyle="normal"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/sign_birthtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="생년월일"
+                    android:textColor="@color/darkgreen"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/font555"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/sign_year"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/box_sign_up"
+                        android:ems="10"
+                        android:hint=" 년(4자)"
+                        android:inputType="textPersonName"
+                        android:textStyle="normal"
+                        android:text="" />
+
+                    <EditText
+                        android:id="@+id/sign_month"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/box_sign_up"
+                        android:ems="10"
+                        android:hint=" 월"
+                        android:inputType="textPersonName"
+                        android:textStyle="normal"
+                        android:text="" />
+
+                    <EditText
+                        android:id="@+id/sign_day"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/box_sign_up"
+                        android:ems="10"
+                        android:hint=" 일"
+                        android:inputType="textPersonName"
+                        android:text=""
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/sign_pwtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="비밀번호"
+                    android:textColor="@color/darkgreen"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/font555"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/sign_PW"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/box_sign_up"
+                    android:ems="10"
+                    android:hint=" 비밀번호"
+                    android:inputType="textPassword"
+                    android:textStyle="normal"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/sign_pw2text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="비밀번호 확인"
+                    android:textColor="@color/darkgreen"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/font555"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/sign_pw2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/box_sign_up"
+                        android:ems="10"
+                        android:hint=" 비밀번호 다시 입력"
+                        android:inputType="textPassword"
+                        android:textStyle="normal"
+                        android:text="" />
+
+                    <Button
+                        android:text="확인"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/box_sign_up"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/sign_Nametext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="이름"
+                    android:textColor="@color/darkgreen"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/font555"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/sign_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/box_sign_up"
+                    android:ems="10"
+                    android:hint=" 이름"
+                    android:inputType="textPersonName"
+                    android:textStyle="normal"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/sign_Nicknametext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="닉네임"
+                    android:textColor="@color/darkgreen"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/font555"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/sign_Nickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/box_sign_up"
+                    android:ems="10"
+                    android:hint=" 닉네임"
+                    android:inputType="textPersonName"
+                    android:textStyle="normal"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/sign_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="성별"
+                    android:textColor="@color/darkgreen"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/font555"
+                    android:textStyle="bold" />
+
+
+                <RadioGroup
+                    android:id="@+id/radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_button_man"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="50dp"
+                        android:text="남자"
+                        android:textStyle="" />
+
+                    <RadioButton
+                        android:id="@+id/radio_button_woman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="여자"
+                        android:textStyle="" />
+
+
+                </RadioGroup>
+
+
+                <TextView
+                    android:id="@+id/signphonenumbertext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="전화번호"
+                    android:textColor="@color/darkgreen"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/font555"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/signphonenumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/box_sign_up"
+                    android:ems="10"
+                    android:hint=" 전화번호"
+                    android:inputType="textPersonName"
+                    android:textStyle="normal"
+                    android:text="" />
+
+                <Button
+                    android:text="회원가입"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/box_sign_up"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>

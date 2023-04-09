@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">YATA</string>
+    <string name="title_home">Home</string>
+    <string name="title_chat">Chat</string>
+    <string name="title_plus">Plus</string>
+    <string name="title_mypage">Mypage</string>
+    <string name="title_setting">Setting</string>
+
+    <string name="hint_id">아이디</string>
+    <string name="hint_password">비밀번호</string>
+    <string name="hint_name">성명을 입력하세요</string>
+    <string name="hint_mobileNO">휴대폰번호를 입력하세요</string>
+    <string name="hint_email">이메일을 입력하세요</string>
+    <string name="btn_login">로그인</string>
+    <string name="btn_register">회원가입</string>
+    <string name="btn_logout">로그아웃</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_fullscreen2">FullscreenActivity2</string>
+</resources>

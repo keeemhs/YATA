@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:theme="@style/ThemeOverlay.Vellog_login.FullscreenContainer"
+    tools:context=".ui.plus.PlusFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="-60dp"
+        android:layout_marginBottom="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="3"
+                android:text="게시글 작성"
+                android:textColor="@color/darkgreen"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:fontFamily="@font/font555"
+                android:gravity="center"/>
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/departuretext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="출발지"
+                    android:textColor="@color/darkgreen"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/font555"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/departure"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/box_sign_up"
+                    android:ems="10"
+                    android:hint=" 출발지"
+                    android:inputType="textPersonName"
+                    android:textStyle="normal"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/arrivaltext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="목적지"
+                    android:textColor="@color/darkgreen"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/font555"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/arrival"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/box_sign_up"
+                    android:ems="10"
+                    android:hint=" 목적지"
+                    android:inputType="textPersonName"
+                    android:textStyle="normal"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/pricetext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="금액"
+                    android:textColor="@color/darkgreen"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/font555"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/price"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/box_sign_up"
+                    android:hint=" 금액"
+                    android:inputType="textPassword"
+                    android:textStyle="normal"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/datetext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="이용날짜"
+                    android:textColor="@color/darkgreen"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/font555"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/box_sign_up"
+                        android:hint=" 이용날짜"
+                        android:inputType="textPassword"
+                        android:textStyle="normal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/start_text"
+                        app:layout_constraintTop_toTopOf="parent"  />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="20dp"
+                        android:src="@drawable/calendar"
+                        android:clickable="true"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/start_date_text"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/timetext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="시간"
+                    android:textColor="@color/darkgreen"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/font555"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/time"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/box_sign_up"
+                    android:hint=" 시간"
+                    android:inputType="textPassword"
+                    android:textStyle="normal"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/taketimetext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="소요시간"
+                    android:textColor="@color/darkgreen"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/font555"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/taketime"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/box_sign_up"
+                    android:hint=" 소요시간"
+                    android:inputType="textPassword"
+                    android:textStyle="normal"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/noticetext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="유의사항"
+                    android:textColor="@color/darkgreen"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/font555"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/notice"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/box_sign_up"
+                    android:hint=" 유의사항"
+                    android:textStyle="normal"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/peoplenumtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="인원수"
+                    android:textColor="@color/darkgreen"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/font555"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/peoplenum"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/box_sign_up"
+                    android:hint=" 인원수"
+                    android:inputType="textPassword"
+                    android:textStyle="normal"
+                    android:text="" />
+
+                <Button
+                    android:text="등록"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/box_sign_up"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>
